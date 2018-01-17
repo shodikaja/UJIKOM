@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>PansCompany
+    <title>jaket company
     </title>
     <!-- Bootstrap Core CSS-->
     <link href="{{asset('/css/dataTables.bootstrap.css')}}" rel="stylesheet">

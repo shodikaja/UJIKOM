@@ -1,588 +1,349 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Mirrored from forbetterweb.com/html/universal/indexkenburns2-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Sep 2017 13:15:29 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!--
+Template Name: Mixin
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="{{asset('honda-xxl.png')}}">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Pans Company
-  </title>
-  <!-- Bootstrap Core CSS-->
-  <link href="{{asset('/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
-  <!-- Custom CSS-->
-  <link href="{{asset('/frontend/css/universal.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="{{asset('/incon.jpg')}}">
+<title>Jaket Company</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="top">
-  <!-- Preloader-->
-  <div id="preloader">
-    <div id="status"></div>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul class="nospace inline">
+        <li><i class="fa fa-phone"></i> +62 (221) 987 9876</li>
+        <li><i class="fa fa-envelope-o"></i> info@jaketcompany.com</li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
   </div>
-  <!-- Navigation One Page-->
-  <nav class="navbar navbar-universal navbar-custom navbar-fixed-top navbar-onepage">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button><a href="#page-top" class="navbar-brand page-scroll">
-        <!-- Text or Image logo--><img src="/img/" alt="Pans Company" class="logodrak">{{-- <img src="img/logodark.png" alt="Honda Pasteur" class="logodark"> --}}</a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling-->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section-->
-          <li class="dropdown">
-            <a>Model<i class="fa fa-chevron-down fa-fw"></i></a>
-            <ul class="dropdown-menu">
-              @foreach($modell as $data)       
-              <li>
-                <a href="{{route('showperkategori', $data->id)}}">{!! $data->nama_model !!}</a></li>
-                @endforeach
-              </ul>
-            </li>
-            <li class="hidden"><a href="#page-top"></a></li>
-            <li><a href="#about" class="page-scroll">About</a></li>
-            <li><a href="#services" class="page-scroll">Services</a></li>
-            <li><a href="#news" class="page-scroll">News</a></li>
-            <li><a href="#portfolio" class="page-scroll">Works</a></li>
-            <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
-            <li><a href="#contact" class="page-scroll">Contact</a></li>
-            </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="/">jaketCompany</a></h1>
+    </div>
+    <!-- ################################################################################################ -->
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li class="active"><a href="/">Home</a></li>
+       
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#"></a></li>
+      </ul>
     </nav>
-    <!-- Header-->
-    <header class="intro">
-      <!-- Intro Header-->
-      <div class="intro-body">
-        <h2>Konveksi <span class="bold">Celana</span> Bandung
-        </h2>
-        <h1>PansCompany</h1>
-        <div data-wow-delay="1s" class="scroll-btn wow fadeInDown"><a href="#about" class="page-scroll"><span class="mouse"><span class="weel"><span></span></span></span></a></div>
-      </div>
-    </header>
-    <!-- Slider-->
-    <section id="about" class="section-small">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Siapakah Kami?</h3>
-            @foreach($perusahaan as $data)
-            <p class="no-pad">{!!$data->about!!}</p> 
-            @endforeach
-            <h2 class="classic">Team PansCompany</h2>
-          </div>
-
-          <div data-wow-duration="2s" data-wow-delay=".2s" class="col-lg-5 col-lg-offset-1 wow zoomIn">
-            <p>
-              <div id="carousel-light2" class="carousel slide carousel-fade">
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-light2" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-light2" data-slide-to="1"></li>
-                  <li data-target="#carousel-light2" data-slide-to="2"></li>
-                </ol>
-
-                <div role="listbox" class="carousel-inner">
-
-                  @foreach($perusahaan as $data)
-                  <br>
-                  <div class="item active" hidden=""><img src="/img/img1/{{$data->cover}}" alt="" class="img-responsive center-block"></div>
-                  <div class="item"><img src="/img/img2/{{$data->cover2}}" alt="" class="img-responsive center-block"></div>
-                  <div class="item"><img src="/img/img3/{{$data->cover3}}" alt="" class="img-responsive center-block"></div>
-                  @endforeach
-                  <div class="item"><img src="img/misc/4.png" alt="" class="img-responsive center-block"></div> 
-                </div>
-
-              </div>
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- About Section-->
-    <section id="about2" class="bg-gray">
-      <div class="container wow fadeIn">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Persentasi PansCompany</h3>
-            <p>Setiap harinya kami mengalami kenaikan yang begitu drastis, sehingga memajukan perusahaan kami begitu PESAT, dan mengalahkan beberapa perusahaan ternama di Indonesia</p>
-          </div>
-          <div class="col-lg-5 col-lg-offset-1 text-center">
-            <h3>&nbsp;</h3>
-            <div data-thickness="4" data-value="0.93" class="circle"><span></span>
-              <div class="agenda">Pendapatan</div>
-            </div>
-            <div data-thickness="10" data-value="0.82" class="circle"><span></span>
-              <div class="agenda">Pengabdian</div>
-            </div>
-            <div data-thickness="18" data-value="0.68" class="circle"><span></span>
-              <div class="agenda">Pengeluaran</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services Section-->
-    <section id="services" class="bg-img4 text-center">
-      <div class="overlay"></div>
-      <div class="container text-center">
-        <div class="row">
-         @foreach($perusahaan as $data)
-         <div class="col-lg-8 col-lg-offset-2">
-          <h3>{{$data->service}}</h3>
-          <p>{!!$data->dekservice!!}</p>
-        </div>
-        @endforeach
-      </div>
-      <div class="row">
-        <div data-wow-delay=".2s" class="col-lg-3 col-sm-6 wow fadeIn">
-          <h4><i class="icon icon-big fa fa-money"></i> Keuangan</h4>
-          <p>Biyaya Perawatan Lebih Hemat</p>
-        </div>
-        <div data-wow-delay=".4s" class="col-lg-3 col-sm-6 wow fadeIn">
-          <h4><i class="icon-big ion-ios-pulse"></i> Harga</h4>
-          <p>Bebas Kenaikan Harga</p>
-        </div>
-        <div data-wow-delay=".6s" class="col-lg-3 col-sm-6 wow fadeIn">
-          <h4><i class="icon icon-big ion-ios-stopwatch-outline"></i> Cicilan</h4>
-          <p>Dapat Dicicil Bersama Kredit Mobil</p>
-        </div>
-        <div data-wow-delay=".8s" class="col-lg-3 col-sm-6 wow fadeIn">
-          <h4><i class="icon icon-big fa fa-car"></i> Kendaraan</h4>
-          <p>Kendaraan Tetap Prima</p>
-        </div>
-        <div data-wow-delay="1s" class="col-lg-3 col-sm-6 wow fadeIn">
-          <h4><i class="icon icon-big fa fa-globe"></i>Deler</h4>
-          <p>Berlaku Di Seluruh Deler Honda Di Indonesia</p>
-        </div>
-        <div data-wow-delay="1.2s" class="col-lg-3 col-sm-6 wow fadeIn">
-          <h4><i class="icon icon-big fa fa-crop"></i>Paket Cermat Plus+</h4>
-          <p>Potongan Harga Jasa dan Suku Cadang unruk Perbaikan Umum*</p>
-        </div>
-        <div data-wow-delay="1.4s" class="col-lg-3 col-sm-6 wow fadeIn">
-          <h4><i class="icon icon-big fa fa-refresh"></i>Paket Cermat Plus+</h4>
-          <p>Dapat Dipindahkan ke Kendaraan Baru*</p>
-        </div>
-        <div data-wow-delay="1.6s" class="col-lg-3 col-sm-6 wow fadeIn">
-          <h4><i class="icon icon-big fa fa-usd"></i>Paket Cermat Plus+</h4>
-          <p>Bebas dari Biaya Perbaikan Tak Terduga</p>
-        </div> 
-      </div>
-    </div>
-    <div><a href="/portfolio" class="btn btn-dark-border">Lihat Paket</a></div>
-  </section>
-
-  <!-- Slider-->
-  <section id="action-slider">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <h3>Awesome Template</h3>
-          <p>Universal is the perfect template for your next project! It’s time to grow your business. Go make something awesome. Designed for Everyone. Let’s give your website a brand.</p><a href="https://themeforest.net/item/universal-smart-multipurpose-html5-template/17268942" class="btn btn-dark">Get it Now!</a>
-        </div>
-        <div class="col-lg-6 col-lg-offset-1">
-          <div id="carousel-light" class="carousel slide carousel-fade">
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-light" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-light" data-slide-to="1"></li>
-              <li data-target="#carousel-light" data-slide-to="2"></li>
-            </ol>
-            <div role="listbox" class="carousel-inner">
-              <div class="item active"><img src="img/misc/1.png" alt="" class="img-responsive center-block"></div>
-              <div class="item"><img src="img/misc/2.png" alt="" class="img-responsive center-block"></div>
-              <div class="item"><img src="img/misc/3.png" alt="" class="img-responsive center-block"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Subscribe Section-->
-  <section id="subscribe" class="section-small bg-img5 text-center">
-    <div class="overlay-white"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-offset-2">
-          <h3>Datang Kemari</h3>
-          <h5>Dan Buktikan Secara Langsung Di Outlet Kami</h5>
-          <!-- MailChimp Signup Form - Replace the form action in the line below with your MailChimp embed action! For more information on how to do this please visit the Docs!-->
-          {{-- <i class="icon icon-big ion-ios-analytics-outline"></i> --}}
-          <!-- End MailChimp Signup Form--><img src="{{asset('honda-xxl.png')}}" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- News Block-->
-  <section id="news">
-    <div class="container">
-      <h3 class="pull-left">Latest news</h3>
-      <div class="pull-right">
-        <h5><a href="news3.html">SEE ALL</a></h5>
-      </div>
-      <div class="clearfix"></div>
-      <div class="row grid-pad">
-        @foreach($mobils as $data)
-        <div class="col-sm-4"><a href="{{route('show.show',$data->id)}}"><img src="/img/{{$data->cover}}" alt="" class="img-responsive center-block">
-          <h5>{{$data->nama_mobil}}</h5></a>
-          <p>{!! substr($data->deskripsi,0,200)."..." !!}</p>
-          <a class="btn btn-default" href="{{route('show.show',$data->id)}}">Read more</a>
-        </div>
-        @endforeach       
-      </div>
-    </div>
-  </section>
-  <!-- Portfolio-->
-  <section id="portfolio" class="bg-gray no-pad-btm">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-          <h3>Portfolio</h3>
-        {{-- <ul class="portfolio-sorting list-inline text-center">
-          <li><a href="portfolio-single.html" data-group="all" class="active">All</a></li>
-          <li><a href="portfolio-single.html" data-group="photo">Photo</a></li>
-          <li><a href="portfolio-single.html" data-group="design">Design</a></li>
-          <li><a href="portfolio-single.html" data-group="branding">Branding</a></li>
-        </ul> --}}
-      </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+@foreach ($Header as $data)
+<div class="wrapper bgded" style="background-image:url('/img/img6/{{$data->background}}')">
+  <div class="overlay black">
+    <div id="pageintro" class="clear"> 
+      <!-- ################################################################################################ -->
+      <h2 class="heading font-xl uppercase">{!!$data->text_besar!!}</h2>
+      <p>{!!$data->text_kecil!!}</p>
+      <!-- ################################################################################################ -->
     </div>
   </div>
-  <div class="container-fluid">
-    <div id="grid" class="row portfolio-items">
-      @foreach($mobils as $data)
-      <div data-groups="[&quot;design&quot;, &quot;branding&quot;]" class="col-md-3 col-sm-6 no-pad">
-        <div class="portfolio-item"><a href="{{route('show.show',$data->id)}}"><img src="/img/{{$data->cover}}" alt="">
-          <div class="portfolio-overlay">
-            <div class="caption">
-              <h5>{{$data->nama_mobil}}</h5><span>{{$data->modell->nama_model}}</span>
-            </div>
-          </div></a></div>
-        </div>
-        @endforeach
-        <div data-groups="[&quot;photo&quot;, &quot;branding&quot;]" class="col-md-3 col-sm-6 no-pad">
-          <div class="portfolio-item"><a href="portfolio-single.html"><img src="img/portfolio/7.jpg" alt="">
-            <div class="portfolio-overlay">
-              <div class="caption">
-                <h5>Form Image Creative</h5><span>Lorem ipsum dolor sit amet</span>
-              </div>
-            </div></a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="section-small action bg-gray text-center"><a href="/portfolio" class="btn btn-dark-border">View All Portfolio</a></div>
-    <!-- Team Section-->
-    <section id="team" class="bg-white text-center">
-      <div class="container">
-        <h3>Berkenalan dengan Anggota</h3>
-        <div class="row">
-          <center>
-            @foreach($leader as $data)
-            <div class="col-md-3 col-sm-6">
-              <p><img src="/img/{{$data->cover}}" alt="" class="img-responsive center-block"></p>
-              <font color="grey"> <h2 class="classic"> <br> {{$data->nama}}</h2> </font>
-              <ul class="list-inline">
-                <li><a href="http://forbetterweb.com/"><i class="fa fa-twitter fa-lg"></i></a></li>
-                <li><a href="{{$data->link_fb}}"><i class="fa fa-facebook fa-lg"></i></a></li>
-                <li><a href="{{$data->link_google}}"><i class="fa fa-google-plus fa-lg"></i></a></li>
-              </ul>
-              <h6>{{$data->jabatan}}</h6>
-            </div>
-            @endforeach
-          </center>
-        </div>
-      </div>
-    </section>
-    <!-- Quotes-->
-    <section class="quote section-small bg-img3 text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          @foreach($perusahaan as $data)
-          <div class="col-sm-8 col-sm-offset-2">
-            <p><i class="icon fa fa-quote-left fa-lg"></i></p>
-            <p>{!!$data->motto!!}</p>
-            <h2 class="no-pad classic">"PansCompany"</h2>
-          </div>
-          @endforeach
-        </div>
-      </div>
-    </section>
-    <!-- Why Section-->
-    <section>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <h3>Mengapa Memilih Kita?</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div data-wow-delay=".2s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon-big icon ion-ios-infinite-outline"></i> Banyak Pilihan</h4>
-            <p>Honda Pasteur memiliki banyak pilihan mobil yang dijual, berbagai macam model dan warna yang kami tawarkan</p>
-          </div>
-          <div data-wow-delay=".4s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon-big ion-ios-sunny-outline"></i> Sambutan Hangat</h4>
-            <p>Sambutan hangat dari para Sales kami yang akan menuntun anda untuk memilih mobil-mobil yang kami sediakan</p>
-          </div>
-          <div data-wow-delay=".6s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon-big ion-ios-glasses-outline"></i> Mudah Ditemukan</h4>
-            <p>Lokasi yang strategis memungkinkan anda untuk memudahkan datang ke deler kami berkat akses jalan yang mudah dan bebas kemacetan</p>
-          </div>
-          <div data-wow-delay=".8s" class="col-lg-3 col-sm-6 wow fadeIn">
-            <h4><i class="icon-big fa fa-money"></i> Pembayaran Mudah</h4>
-            <p>Kami memberi kemudahan anda dalam melakukan pembayaran, Kami memberikan Cicilan untuk pembelian di Deler kami</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Facts section-->
-    <section class="facts section-small bg-img">
-      <div class="overlay"></div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-3"><span data-min="0" data-max="29" data-delay="5" data-increment="1" class="numscroller">0</span>
-            <h5 class="no-pad">Mobil Dikeluarkan</h5>
-          </div>
-          <div class="col-sm-3"><span data-min="0" data-max="2785" data-delay="5" data-increment="3" class="numscroller">0</span>
-            <h5 class="no-pad">Customers Bahagia</h5>
-          </div>
-          <div class="col-sm-3"><span data-min="0" data-max="12" data-delay="5" data-increment="1" class="numscroller">0</span>
-            <h5 class="no-pad">Mendapat Penghargaan</h5>
-          </div>
-          <div class="col-sm-3"><span data-min="0" data-max="78" data-delay="5" data-increment="1" class="numscroller">0</span>
-            <h5 class="no-pad">Mobil Terjual</h5>
-          </div>
+</div>
+@endforeach
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <div class="container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="flexslider basicslider">
+      <ul class="slides">
+        <!-- START SLIDES -->
+        <!-- ################################################################################################ -->
+        <li>
+          <article class="clear">
+            <div class="one_half first">
+              <h2 class="heading">Visi</h2>
+              <p>JaketCompany akan selalu memprioritaskan aktifitas bisnis terpadu dan terprogram untuk mencapai dan memberikan hasil optimal dan kepuasan pelanggan dengan harapan menjalin hubungan yang baik..</p>
+              <a href="#" title="View">Read More &raquo;</a></div>
+            <div class="one_half"><img src="images/demo/slides/01.png" alt=""></div>
+          </article>
+        </li>
+        <li>
+          <article class="clear">
+            <div class="one_half first">
+              <h2 class="heading">Misi</h2>
+              <p>Aktif sekaligus proaktif dalam menjalankan roda bisnis dengan tujuan mendukung program pemerintah untuk meningkatkan perekonomian bangsa dan menciptakan lapangan kerja kerja sesuai dengan program pemerintah di tanah air.
 
-          {{-- @foreach($perusahaan as data)
-          <div class="col-sm-3"><span data-min="0" data-max="{{$data->persentase1}}" data-delay="5" data-increment="1" class="numscroller">0</span>
-            <h5 class="no-pad">Mobil Terjual</h5>
-          </div>
-          @endforeach --}}
+Menciptakan budaya kerja yang berkwalitas dan profesional dengan tujuan memberikan kwalitas terbaik baik bagi mitra kerja maupun bagi karyawan JaketCompany.
 
-        </div>
-      </div>
-    </section>
-    <!-- Testimonials Section-->
-    <section id="testimonials">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <h3 class="text-center">Testimonials</h3>
-            <div id="carousel-testimonials" data-ride="carousel" class="carousel slide carousel-fade">
-              <!-- Indicators-->
-              <ol class="carousel-indicators">
-                {{-- <li data-target="#carousel-testimonials" data-slide-to="0" hidden=""></li> --}}
-                <li data-target="#carousel-testimonials" data-slide-to="1" class="active"></li>
-                <li data-target="#carousel-testimonials" data-slide-to="2"></li>
-                <li data-target="#carousel-testimonials" data-slide-to="3"></li>
-              </ol>
-              <!-- Wrapper for slides-->
-              <div role="listbox" class="carousel-inner">
-                @foreach($leadera as $data)
-                <div class="item active"><img src="/img/{{$data->cover}}" alt="" class="center-block" hidden="">
-                  <div class="carousel-caption">
-                    <h2 class="classic">{{$data->nama}}</h2>
-                    <h5 class="no-pad">{!! $data->testimoni !!}</h5>
-                  </div>
-                </div>
-                @endforeach
-                @foreach($leader as $data)
-                <div class="item"><img src="/img/{{$data->cover}}" alt="" class="center-block">
-                  <div class="carousel-caption">
-                    <h2 class="classic">{{$data->nama}}</h2>
-                    <h5 class="no-pad">Adorable minimalist theme! Should be working well as a canvas for any upcoming project.</h5>
-                  </div>
-                </div>
-                @endforeach
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Action video-->
-    <section class="section-small bg-img2 text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2"><a href="https://www.youtube.com/watch?v=0FtX0oIMIPM" class="swipebox-video"><i class="icon icon-big ion-ios-videocam-outline"></i></a>
-            <h2>Tonton <span class="bold">Video</span>
-            </h2>
-            <p>Perjalanan perusahaan kami dari tahun... hingga sekarang, Sangat banyak pengetahuan yang kami Dapatkan.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Section-->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <h3>contact us</h3>
-            <p>Ingin Mengetahui Layanan Kami Lebih Lanjut? Silahkan Hubungi Call Center Kami</p>
-            <hr>
-            <h5><i class="fa fa-map-marker fa-fw fa-lg"></i> Jl. Dr. Djunjunan No. 168 B Bandung 40163 - Jawa Barat - Indonesia
-            </h5>
-            <h5><i class="fa fa-envelope fa-fw fa-lg"></i> info@hondapasteur.com 
-            </h5>
-            <h5><i class="fa fa-phone fa-fw fa-lg"></i> [022] 2000977, 2000975 Fax. 2015 193
-            </h5>
-          </div>
-          <div class="col-md-5 col-md-offset-2">
-            <h3>Get in Touch</h3>
-            <!-- Contact Form - Enter your email address on line 17 of the mail/contact_me.php file to make this form work. For more information on how to do this please visit the Docs!-->
-            <form id="contactForm" name="sentMessage" novalidate="">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label for="name" class="sr-only control-label">You Name</label>
-                  <input id="name" type="text" placeholder="You Name" required="" data-validation-required-message="Please enter name" class="form-control input-lg"><span class="help-block text-danger"></span>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label for="email" class="sr-only control-label">You Email</label>
-                  <input id="email" type="email" placeholder="You Email" required="" data-validation-required-message="Please enter email" class="form-control input-lg"><span class="help-block text-danger"></span>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label for="phone" class="sr-only control-label">You Phone</label>
-                  <input id="phone" type="tel" placeholder="You Phone" required="" data-validation-required-message="Please enter phone number" class="form-control input-lg"><span class="help-block text-danger"></span>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label for="message" class="sr-only control-label">Message</label>
-                  <textarea id="message" rows="2" placeholder="Message" required="" data-validation-required-message="Please enter a message." aria-invalid="false" class="form-control input-lg"></textarea><span class="help-block text-danger"></span>
-                </div>
-              </div>
-              <div id="success"></div>
-              <button type="submit" class="btn btn-dark">Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Map Section-->
-    <div id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9894479328914!2d107.57960831438643!3d-6.89186479501998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e67c6a5aa085%3A0xe09e4e96aa2767fa!2sHonda+Pasteur!5e0!3m2!1sen!2sid!4v1505792187288" width="1350" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+Mempersiapkan dan selalu memperbaharui strategi perusahaan dalam menghadapi persaingan bisnis di pasar bebas.</p>
+              <a href="#" title="View">Read More &raquo;</a></div>
+            <div class="one_half"><img src="images/demo/slides/02.png" alt=""></div>
+          </article>
+        </li>
+
+         <li>
+          <article class="clear">
+            <div class="one_half first">
+              <h2 class="heading">Managamen JaketCompany</h2>
+              <p>Perusahaan didirikan dalam bentuk "commanditaire vennootschap", suatu persekutuan yang didirikan oleh seorang atau beberapa orang yang mempercayakan uang atau barang kepada seorang atau beberapa orang yang menjalankan perusahaan dan bertindak sebagai pemimpin.</p>
+              <a href="#" title="View">Read More &raquo;</a></div>
+            <div class="one_half"><img src="images/demo/slides/02.png" alt=""></div>
+          </article>
+        </li>
+        
+        <!-- ################################################################################################ -->
+        <!-- END SLIDES -->
+      </ul>
     </div>
-    <!-- Action Section-->
-    <section class="action section-small bg-gray2">
-      <div class="container wow fadeIn">
-        <div class="row">
-          <div class="col-md-10">
-            <h3 class="no-pad"><span class="bold">Honda</span> Adalah Pilihan Tepat Anda Untuk Di Masa Depan;)
-            </h3>
-          </div>
-          <div class="col-md-2 text-right"><a href="https://themeforest.net/item/universal-smart-multipurpose-html5-template/17268942" class="btn btn-dark">Pesan Sekarang!</a></div>
-        </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+@foreach ($background_quotes as $data)
+<div class="wrapper bgded" style="background-image:url('/img/img5/{{$data->background}}')">
+@endforeach
+  <div class="overlay dkgrey">
+    <div class="container clear"> 
+      <!-- ################################################################################################ -->
+      <h2 class="nospace center btmspace-50">Motivasi Hebat</h2>
+        <div class="flexslider carousel">
+        <ul class="carousel-items center">
+          @foreach ($quotes as $data)
+          <li>
+            <blockquote>{!!$data->text!!}</blockquote>
+            <figure>
+              <figcaption>
+                <em>~ jaketCompany.cloth</em></figcaption>
+            </figure>
+          </li>
+          @endforeach
+        </ul>
       </div>
-    </section>
-    <!-- Footer Section-->
-    <section class="section-small footer bg-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <h5>About</h5>
-            <p>PT Honda Prospect Motor memberikan garansi pada kendaraan Honda apabila terdapat cacat material atau kesalahan dari hasil kerja pabrik, bukan akibat kesalahan pemakai atau material yang habis atau aus terpakai</p>
-          </div>
-          <div class="col-sm-2 col-sm-offset-1 footer-menu">
-            <h5>Company</h5>
-            <h6 class="no-pad"><a href="{{ url('/service') }}">Our Services</a></h6>
-            <h6 class="no-pad"><a href="clients.html">Our Clients</a></h6>
-            <h6 class="no-pad"><a href="contact.html">Contact Us</a></h6>
-            <h6 class="no-pad"><a href="shop.html">Shop</a></h6>
-          </div>
-          <div class="col-sm-2 footer-menu">
-            <h5>&nbsp;</h5>
-            <h6 class="no-pad"><a href="{{ url('/about') }}">About us</a></h6>
-            <h6 class="no-pad"><a href="portfolio-masonry-4.html">Portfolio</a></h6>
-            <h6 class="no-pad"><a href="team.html">Our Team</a></h6>
-            <h6 class="no-pad"><a href="register.html">Register</a></h6>
-          </div>
-          {{-- <div class="col-sm-3 text-right">
-            <h5>Total downloads</h5><span data-min="0" data-max="2785" data-delay="5" data-increment="3" class="numscroller">0</span>
-          </div> --}}
-        </div>
-      </div>
-    </section>
-    <section class="section-small footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <h6>Powered By <a href="http://forbetterweb.com/"> Laravel</a>
-            </h6>
-          </div>
-          <div class="col-sm-3 col-sm-offset-1">
-            <h6>We <i class="fa fa-heart fa-fw"></i> Happy Costumers
-            </h6>
-          </div>
-          <div class="col-sm-3 col-sm-offset-1 text-right">
-            <ul class="list-inline">
-              <li><a href="http://forbetterweb.com/"><i class="fa fa-twitter fa-fw fa-lg"></i></a></li>
-              <li><a href="http://forbetterweb.com/"><i class="fa fa-facebook fa-fw fa-lg"></i></a></li>
-              <li><a href="http://forbetterweb.com/"><i class="fa fa-google-plus fa-fw fa-lg"></i></a></li>
-              <li><a href="http://forbetterweb.com/"><i class="fa fa-linkedin fa-fw fa-lg"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    @yield('footer')
-    <!-- jQuery-->
-    <script src="{{asset('/frontend/js/jquery-1.12.4.min.js')}}"></script>
-    <!-- Bootstrap Core JavaScript-->
-    <script src="{{asset('/frontend/js/bootstrap.min.js')}}"></script>
-    <!-- Plugin JavaScript-->
-    <script src="{{asset('/frontend/js/jquery.easing.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/jquery.countdown.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/device.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/form.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/jquery.placeholder.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/jquery.shuffle.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/jquery.parallax.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/jquery.circle-progress.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/jquery.swipebox.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/smoothscroll.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/wow.min.js')}}"></script>
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3E86i8mx1BZDlAaLcknh_mWl4F70i4os"></script>
-    <script src="js/map.js"></script>
-    <!-- Background Slider-->
-    <script src="{{asset('/frontend/js/vegas/vegas.min.js')}}"></script>
-    <script>
-      $('body').vegas({
-        delay: 7000,
-        timer: false,
-        transitionDuration: 2000,
-        slides: [
-        @foreach($mobil as $data)
-        {src: '/img/{{$data->cover}}'},
-        @endforeach              
-        ],
-        transition: ['swirlRight', 'swirlLeft'],
-        animation: ['kenburns']
-      });
-    </script>
-    <!-- Custom Theme JavaScript-->
-    <script src="{{asset('/frontend/js/universal.js')}}"></script>
-<!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    @yield('universal')
-  </body>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="group btmspace-50">
+      <article class="one_third first">
+        <h2>Rencana jangka pendek</h2>
+        <p>Memperkenalkan produk dan jasa perusahaan dibidang garment melalui program pemasaran secara efektif dengan manajemen sistematis sejalan dengan lajunya perkembangan dunia usaha di tanah air maupun mancanegara. Selain itu, memperkenalkan produk dan jasa melalui humas, promosi dengan tujuan produk dan jasa diperkenalkan hingga seluruh indonesia.</p>
+        <p class="nospace"><a href="#">Read More &raquo;</a></p>
+      </article>
+      <article class="one_third">
+        <h2>Rencana Jangka Menengah</h2>
+        <p>Penekanan perusahaan pada kualitas produk dan jasa yang meliputi pelayanan customer, layanan purnajual terjamin untuk memperkuat posisi dasar dan menentukan peluang-peluang bisnis yang ada maupun yang akan datang</p>
+        <p class="nospace"><a href="#">Read More &raquo;</a></p>
+      </article>
+      <article class="one_third">
+        <h2>Rencana Jangka Panjang</h2>
+        <p>Prioritas perusahaan untuk mengembangkan departement atau anak perusahaan baru yang memiliki hubungan erat dengan bisnis usaha yang ada di bidang produk garment dengan tujuan memasarkan produk dan jasa secara global.
 
-  <!-- Mirrored from forbetterweb.com/html/universal/indexkenburns2-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Sep 2017 13:15:29 GMT -->
-  </html>
+Merekrut tim-tim ahli di bidang garment secara selektif untuk tujuan memperkuat fondasi dasar perusahaan dalam bersaing dari segi produk dan jasa di tanah air maupun mancanegara.</p>
+        <p class="nospace"><a href="#">Read More &raquo;</a></p>
+      </article>
+    </div>
+    <!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+              
+        
+          <header class="heading">&nbsp&nbsp&nbsp&nbsp&nbsp <b>Product Yang Di Tawarkan JaketCompany</b>.<i></i></header>
+          
+          <br>
+          <br>
+          <div id="gallery">
+        <figure>
+          <ul class="nospace clear">
+          @foreach ($Product as $data)
+          
+          
+            <li class="one_quarter">
+
+            <h2><u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</u></h2>
+            <img src="/img/img7/{{$data->cover}}">
+            <br>
+            <br>
+            <center><h1 class="heading"><b><u>{!!$data->nama_product!!}</u></b></h1></center>
+            <p> <b><u>Detail</u></b>  {!!$data->detail!!}</p>
+
+            <h2><u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</u></h2>
+            </th>
+          </tr>
+            </li>
+      @endforeach
+          
+      </ul>
+      </figure>
+      </div>
+         <figcaption>Gallery Product JaketCompany</figcaption>
+        </div>
+
+
+    <!-- ################################################################################################ -->
+    <hr class="btmspace-50">
+    <!-- ################################################################################################ -->
+    <h2>Mauris ultrices pellentesque elementum.</h2>
+    <p>Proin eget quam vitae eros ultricies mattis eu quis mauris. Nam faucibus nec tortor sed tincidunt. Duis ac sagittis sapien. Aenean viverra eros tortor, id scelerisque nibh accumsan non.</p>
+    <ul class="nospace group capitalise figblock">
+      <li class="one_quarter first"><a href="#">
+        <figure class="borderedbox"><img src="images/demo/320x320.png" alt="">
+          <figcaption class="inspace-15">Vivamus viverra</figcaption>
+        </figure>
+        </a></li>
+      <li class="one_quarter"><a href="#">
+        <figure class="borderedbox"><img src="images/demo/320x320.png" alt="">
+          <figcaption class="inspace-15">Tellus at ullamcorper</figcaption>
+        </figure>
+        </a></li>
+      <li class="one_quarter"><a href="#">
+        <figure class="borderedbox"><img src="images/demo/320x320.png" alt="">
+          <figcaption class="inspace-15">Nam imperdiet tincidunt</figcaption>
+        </figure>
+        </a></li>
+      <li class="one_quarter"><a href="#">
+        <figure class="borderedbox"><img src="images/demo/320x320.png" alt="">
+          <figcaption class="inspace-15">Nunc elementum molestie</figcaption>
+        </figure>
+        </a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded" style="background-image:url('images/demo/backgrounds/03.png')"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper overlay dkgrey">
+    <div id="socialbox" class="clear"> 
+      <!-- ################################################################################################ -->
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-skype" href="#"><i class="fa fa-skype"></i></a></li>
+        <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
+        <li><a class="faicon-bitcoin" href="#"><i class="fa fa-bitcoin"></i></a></li>
+        <li><a class="faicon-dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>
+        <li><a class="faicon-flickr" href="#"><i class="fa fa-flickr"></i></a></li>
+        <li><a class="faicon-instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="faicon-tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+        <li><a class="faicon-youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper overlay white">
+    <footer id="footer" class="clear"> 
+      <!-- ################################################################################################ -->
+      <div class="one_quarter first">
+        <h6 class="title">Company Details</h6>
+        <address class="btmspace-15">
+        Company Name<br>
+        Street Name &amp; Number<br>
+        Town<br>
+        Postcode/Zip
+        </address>
+        <ul class="nospace">
+          <li class="btmspace-10"><span class="fa fa-phone"></span> +00 (123) 456 7890</li>
+          <li><span class="fa fa-envelope-o"></span> info@domain.com</li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="title">From The Blog</h6>
+        <article>
+          <h2 class="nospace font-x1"><a href="#">Maecenas pretium</a></h2>
+          <time class="smallfont" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+          <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed.</p>
+        </article>
+      </div>
+      <div class="one_quarter">
+        <h6 class="title">Sed consectetur enim</h6>
+        <ul class="nospace linklist">
+          <li><a href="#">Nullam id est condimen</a></li>
+          <li><a href="#">Praesent eget purus ut</a></li>
+          <li><a href="#">Ut quis augue quis neque</a></li>
+          <li><a href="#">Quisque varius erat sed</a></li>
+          <li><a href="#">Fusce quis dolor et</a></li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="title">Proin et magna eget</h6>
+        <p>Ut ut eleifend massa. Phasellus tincidunt ipsum et ante tempor condimentum. Sed porttitor eget mauris ut lobortis? Integer nec vehicula dolor. Nullam rutrum ac lorem ut condimentum.</p>
+      </div>
+      <!-- ################################################################################################ -->
+    </footer>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>

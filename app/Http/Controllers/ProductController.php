@@ -30,7 +30,8 @@ public function index(Request $request, Builder $htmlBuilder)
                ->addColumn('action', function($Product){
             return view('datatable._action', [
                 'model'=> $Product,
-                'edit_url'=> route('Product.edit', $Product->id)
+                'edit_url'=> route('Product.edit', $Product->id),
+                'drop_url'=> route('Product.destroy', $Product->id)
                 ]);
         })->make(true);
     }
@@ -169,6 +170,24 @@ public function index(Request $request, Builder $htmlBuilder)
     public function destroy($id)
     {
         //
+        $Produk=Product::find($id);
+        $cover=$produk->cover;
+        if(! $produk->dalate()) return redirect()->back();
+        if($cover) {
+            $old_cover=$produk->cover;
+            $filepath=public_path() . DIRECTORY_SEPARATOR . 'img' . 
+                DIRECTORY_SEPARATOR .  $produk->cover;
+                try {
+                    file::delete($filepath);
+                } catch (FileNotFoundException $e) {
+
+                }
+        }
+        Session::flash("flash_notification", [
+            "level"=>"success",
+            "massage"=>"Barang berhasil di hapus"]);
+        return redirect()->route('admin.Product.index');
+
     }
 }
             

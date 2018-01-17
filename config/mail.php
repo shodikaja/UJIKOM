@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => 'admin@honda.com',
-        'name' => 'Admin Honda',
+        'name' => 'Admin',
     ],
 
     /*

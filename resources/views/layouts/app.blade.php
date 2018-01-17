@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
+
+    <link rel="shortcut icon" type="image/ico" href="{{asset('/incon.jpg')}}">
+
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
@@ -60,7 +63,6 @@
                             @endif
                             @role('admin')
                             <li><a href="{{ route('Product.index') }}">Product</a></li>
-                             <li><a href="{{ route('sejarah.index') }}">Sejarah</a></li>
                              
                              <li><a href="{{ route('Header.index') }}">Header</a></li>
 
@@ -75,27 +77,6 @@
 
 
 
-                            <li class="dropdown">
-                            <a href="{{ route('mobils.index') }}">Mobil<i class="fa fa-chevron-down fa-fw"></i></a>
-                                <ul class="dropdown-menu">    
-                                    <li><a href="{{ route('mesin.index') }}">Mesin</a></li>
-                              <li><a href="{{ route('dimensis.index') }}">Dimensi</a></li>
-                              <li><a href="{{ route('transmisis.index') }}">Transmisi</a></li>
-                              <li><a href="{{ route('skemudis.index') }}">Sistem Kemudi</a></li>
-                              <li><a href="{{ route('ssuspensis.index') }}">Sistem Suspensi</a></li>
-                              <li><a href="{{ route('srems.index') }}">Sistem Rem</a></li>
-                              <li><a href="{{ route('bans.index') }}">Ban</a></li>
-                              <li><a href="{{ route('eksteriors.index') }}">Eksterior</a></li>
-                              <li><a href="{{ route('interiors.index') }}">Interior</a></li>
-                              <li><a href="{{ route('fkeselamatans.index') }}">Fitur Keselamatan</a></li>
-                              <li><a href="{{ route('skeamanans.index') }}">Sistem Keamanan</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="{{ route('potos.index') }}">Poto</a></li>
-                              <li><a href="{{ route('leaders.index') }}">Leader</a></li>
-                              <li><a href="{{ route('perusahaans.index') }}">Perusahaan</a></li>
-                              {{--  <li><a href="{{ route('testingadmin.index') }}">Testing</a></li> --}}
-                              
                               @endrole
                           </ul>
 
